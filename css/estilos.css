@@ -1,0 +1,1467 @@
+/* LINK A LA FONT */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+/* propiedad para costumizar */
+:root{
+    --padding-contenedor: 100px 0;
+    --color-title: #000;
+}
+/*FUENTES*/
+
+@font-face {
+    font-family: "Midnight Flame Gothic";
+    src: url(midnight-flame-gothic.ttf);
+  }
+
+  @font-face {
+    font-family: 'Agenda-Fantasy-Demo.otf';
+    src: url('Agenda-Fantasy-Demo.otf.otf') format('opentype');
+  }
+  
+  
+/*PROPIEDADES BODY*/  
+body{  
+    font-family: 'Vidaloka', serif;
+    color: #ffffff;
+    background-image: url(../images/fondo.jpg);
+    background-repeat: repeat;
+    background-size: 20%; 
+    margin: 0;
+
+}
+
+
+/*INDEX*/
+/* CONTENEDOR PRINCIPAL INDEX */
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-contenedor);
+}
+
+.contenedor2{
+    justify-content: center;
+    max-width: 1200px;
+    margin-top: 5%;
+    margin-left: 5%;
+    overflow: hidden;
+    padding: var(--padding-contenedor);
+    }
+
+    
+.encabezado{
+    font-family: 'Agenda-Fantasy-Demo.otf';
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #ffffff;
+}
+
+/*IMAGEN PORTADA*/
+
+.encabezado::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/header2.jpg);
+    background-size: cover;
+    clip-path: ellipse(100% 60% at 50% 30%);
+    z-index: -1;
+}
+
+/*NAVEGADOR - MENU PRINCIPAL*/
+.menu{
+    --padding-contenedor: 0; 
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.menu__titulo{
+    font-size: 1.5em;
+    font-weight: 100;
+    opacity: 60%;
+}
+
+/*LINKS DEL MENU*/
+
+.menu__link{
+    font-size: 1.2em;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+    
+}
+
+a:hover {
+    color: red;}
+
+
+.menu__items{
+    list-style: none;
+    align-items: center;
+}
+
+.menu__links{
+    color:white;
+    text-decoration: none;
+}
+
+/*INTERACCIÓN DEL MENU */
+.menu__menu{
+     
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__img{
+    display: block;
+    width: 30px;
+}
+
+.menu__close{
+    display: var(--show, none);
+}
+
+/* CONTENEDOR  - TEXTO BIENVENIDA */
+
+.encabezado__contenedor{
+    max-width: 800px;
+    --padding-contenedor:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.encabezado__title{
+    font-family: "Midnight Flame Gothic";
+    font-size: 5rem;
+    color: red;
+}
+
+.encabezado__title2{
+    font-family: "Midnight Flame Gothic";
+    font-size: 7rem;
+    color: red;
+}
+
+.encabezado__paragraph{
+    font-family: 'Agenda-Fantasy-Demo.otf';
+    color: #fff;   
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.cont{
+    display: inline-block;
+    font-size: 2rem;
+    background-color: red;
+    justify-self: center;
+    color: black;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 33px;
+}
+.cont6{
+    display: inline-block;
+    font-size: 2rem;
+    background-color: black;
+    justify-self: center;
+    color: white;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 33px;
+    font-family: "Midnight Flame Gothic";
+}
+
+.cont2{
+    display: inline-block;
+    font-size: 2rem;
+    background-color: black;
+    justify-self: center;
+    color: white;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 33px;
+    
+}
+
+
+
+/* ARTISTAS */
+
+.diseño {
+    text-align: center;
+    padding-bottom: 10%;
+    padding-top: 0%;
+}
+.subtitulo{
+    color:red;
+    font-family: "Midnight Flame Gothic";
+font-size: 5em;
+    margin-bottom: 5px;
+}
+
+.parrafo{
+    line-height: 1.7;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: justify;
+    display: inline-block;
+   
+}
+
+.diseño__main{
+    padding-top: 80px;
+    padding-bottom: 10%;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+
+.diseño__icons{
+    display: grid;
+      justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+.diseño__title {
+    font-size: 1.5em;
+
+}
+
+.diseño__icon{
+    width: 40px;
+
+}
+
+.artist__links{
+    color:white;
+    text-decoration: none;
+}
+
+/*GALERIA */
+
+.galeria{
+    font-family: "Midnight Flame Gothic";
+    background-color: red;
+    background-position: 0 0, 36px 36px;
+    background-size: 72px 72px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.encabezado7::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c, #0000008c 100%), url(../images/galeria20.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    z-index: -1;
+}
+
+.menu__titulo{
+    font-size: 1.5em;
+    font-weight: 100;
+    opacity: 60%;
+    color: red;
+}
+
+.galeria__contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.galeria__picture{
+    max-width: 500px;
+}
+
+.galeria__img{
+    width: 100%;
+    display: block;
+}
+
+.carusel__contenedor{
+    width: 60%;
+    margin: auto;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    border: 5px red;
+}
+
+.carusel__slide{
+    display: flex;
+    width: 100%;
+    height: 762px;
+}
+
+#prevBtn{
+    margin-left: 46%;
+    margin-bottom: 20px;
+}
+
+.cont5{
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: red;
+    border: none;
+    justify-self: center;
+    color: #000;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 33px;
+
+}
+
+/*Galeria de Imagenes*/
+    
+#galeria {
+    position:relative;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4px;
+    padding-left: 20%;
+padding-right: 20%;
+
+  }
+  
+  #galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+
+  }
+  
+  #img-activa {
+    width: 100%;
+    height: auto;
+  }
+  
+  /*Contenedor Principal del Lightbox*/
+  
+  #contenedor-principal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*Contenedor interno del Lightbox*/
+  
+  #contenedor-interno {
+    border: 2px #f3f3f3 solid;
+    padding: 2px;
+    background: #3f3f3f;
+    max-width: 500px;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*Botones*/
+  
+  button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #f3f3f3;
+  }
+  
+  #btn-cierra {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+    font-family: "Midnight Flame Gothic";
+    color: #df2121;
+  }
+  
+  #btn-retrocede {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 4rem;
+    font-family: 'Agenda-Fantasy-Demo.otf';
+    color: #df2121;
+  }
+  
+  #btn-adelanta {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 4rem;
+    font-family: 'Agenda-Fantasy-Demo.otf';
+    color: #df2121;
+  }
+
+
+  
+      
+    /*Encabezado galeria*/
+    .encabezado10{
+        font-family: 'Agenda-Fantasy-Demo.otf';
+        width: 100%;
+        height: 100vh;
+        min-height: 600px;
+        max-height: 800px;
+        position: relative;
+        display: grid;
+        grid-template-rows: 100px 1fr;
+        color: #ffffff;
+    }
+    .encabezado10::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/headergaleria.jpg);
+        background-size: cover;
+        clip-path: ellipse(100% 60% at 50% 30%);
+        z-index: -1;
+    }
+    
+    .encabezado10__title{
+        font-family: "Midnight Flame Gothic";
+        font-size: 15rem;
+        color: red;
+    }
+    
+    .menu__titulo{
+        font-size: 1.5em;
+        font-weight: 100;
+        opacity: 60%;
+        color: red;
+    }
+/* PORTADA C/ PAGINA DE ARTISTAS*/
+
+/*Vincent Price*/
+.encabezado1{
+    font-family: 'Agenda-Fantasy-Demo.otf';
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #ffffff;
+}
+.encabezado1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vincentpriceheader.jpg);
+    background-size: cover;
+    clip-path: ellipse(100% 60% at 50% 30%);
+    z-index: -1;
+}
+
+.encabezado1__title{
+    font-family: "Midnight Flame Gothic";
+    font-size: 9rem;
+    color: red;
+}
+
+.menu__titulo{
+    font-size: 1.5em;
+    font-weight: 100;
+    opacity: 60%;
+    color: red;
+}
+
+
+
+/*Béla Lugosi*/
+
+.encabezado2{
+    font-family: 'Agenda-Fantasy-Demo.otf';
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #ffffff;
+}
+
+.encabezado2__title{
+    font-family: "Midnight Flame Gothic";
+    font-size: 9rem;
+    color: red;
+}
+.encabezado2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/belalugosiheader.jpg);
+    background-size: cover;
+    clip-path: ellipse(100% 60% at 50% 30%);
+    z-index: -1;
+}
+
+.menu__titulo{
+    font-size: 1.5em;
+    font-weight: 100;
+    opacity: 60%;
+    color: red;
+}
+
+
+
+/*Boris Karloff*/
+
+.encabezado3{
+    font-family: 'Agenda-Fantasy-Demo.otf';
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #ffffff;
+}
+
+.encabezado3__title{
+    font-family: "Midnight Flame Gothic";
+    font-size: 9rem;
+    color: red;
+}
+
+.encabezado3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/boriskarloffheader.jpg);
+    background-size: cover;
+    clip-path: ellipse(100% 60% at 50% 30%);
+    z-index: -1;
+}
+
+.menu__titulo{
+    font-size: 1.5em;
+    font-weight: 100;
+    opacity: 60%;
+    color: red;
+}
+
+/*Christopher Lee*/
+
+.encabezado4{
+    font-family: 'Agenda-Fantasy-Demo.otf';
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #ffffff;
+}
+
+.encabezado4__title{
+    font-family: "Midnight Flame Gothic";
+    font-size: 9rem;
+    color: red;
+}
+
+.encabezado4::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/christopherleeheader.jpg);
+    background-size: cover;
+    clip-path: ellipse(100% 60% at 50% 30%);
+    z-index: -1;
+}
+
+.menu__titulo{
+    font-size: 1.5em;
+    font-weight: 100;
+    opacity: 60%;
+    color: black;
+}
+
+/*Peter Cushing*/
+
+.encabezado5{
+    font-family: 'Agenda-Fantasy-Demo.otf';
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #ffffff;
+}
+
+.encabezado5__title{
+    font-family: "Midnight Flame Gothic";
+    font-size: 9rem;
+    color: red;
+}
+
+.encabezado5::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/petercushingheader.jpg);
+    background-size: cover;
+    clip-path: ellipse(100% 60% at 50% 30%);
+    z-index: -1;
+}
+
+.menu__titulo{
+    font-size: 1.5em;
+    font-weight: 100;
+    opacity: 60%;
+    color: black;
+}
+
+/*Lon jr*/
+
+.encabezado6{
+    font-family: 'Agenda-Fantasy-Demo.otf';
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #ffffff;
+}
+
+.encabezado6__title{
+    font-family: "Midnight Flame Gothic";
+    font-size: 9rem;
+    color: red;
+}
+
+.encabezado6::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/lonchaneyjrheader.jpg);
+    background-size: cover;
+    clip-path: ellipse(100% 60% at 50% 30%);
+    z-index: -1;
+}
+
+.menu__titulo{
+    font-size: 1.5em;
+    font-weight: 100;
+    opacity: 60%;
+    color: black;
+}
+
+
+
+
+
+
+
+/*footer*/
+
+.footer{
+    background-color: #000000;
+    text-align: center;
+    width: 100%;
+    padding: 1.2em;
+}
+   
+
+.footer__title{
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: red;
+    font-weight: 100;
+    margin-right: 40px;
+    margin-left: 0px;
+}
+
+/*CONTACTO*/
+
+form{
+    background-image: url(../images/fondocontacto.jpg);
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+form h3{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 100;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-self: center;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px;
+    padding: 20px;
+    outline: none;
+    background-color: black;
+    font-size: 1.3em;
+    border-radius: 15px;
+}
+
+form button{
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    margin: 10px;
+}
+
+/*Encabezado contacto*/
+.encabezado12{
+    font-family: 'Agenda-Fantasy-Demo.otf';
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #ffffff;
+}
+.encabezado12::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/headercreditos.jpg);
+    background-size: cover;
+    clip-path: ellipse(100% 60% at 50% 30%);
+    z-index: -1;
+}
+
+.encabezado12__title{
+    font-family: "Midnight Flame Gothic";
+    font-size: 13rem;
+    color: red;
+}
+
+.menu__titulo{
+    font-size: 1.5em;
+    font-weight: 100;
+    opacity: 60%;
+    color: red;
+}
+
+.cont7{
+    display: inline-block;
+    font-size: 2rem;
+    background: url(../images/fondocontacto.jpg);
+    justify-self: center;
+    color: white;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 33px;
+    font-family: "Midnight Flame Gothic";
+}
+
+/*JUEGO*/
+.juego{
+    width: 920px;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    background: linear-gradient(#0E1A54, #000000);
+    overflow: hidden;
+    }
+    
+    .jugadorx{
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    bottom: 22px;
+    left: 42px;
+    z-index: 2;
+    background: url(../images/jugadorx.png) repeat-x 0px 0px;
+    background-size: 336px 84px;
+    background-position-x: 0px;
+    
+    }
+    
+    .jugadorx-corriendo {
+        animation: animarjugadorx 0.25s steps(2) infinite;
+    }
+    .jugadorx-estrellado {
+        background-position-x: -252px;
+    }
+    
+    
+    @keyframes animarjugadorx{
+        from{
+            background-position-x: -84px;
+        }
+        to{
+            background-position-x: -252px;
+        }
+    }
+    
+    
+    .fondo{
+        width: 200%;
+        height: 42px;
+    
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    
+        background: url(../images/suelo.png) repeat-x 0px 0px;
+        background-size: 50% 42px;
+       
+        }
+        
+        .puntaje{
+            width: 100px;
+            height: 30px;
+            position: absolute;
+            top:5px;
+            right: 15px;
+            z-index: 10;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: right;
+            
+        
+        }
+    
+    
+        .monstruo{
+            width: 110px;
+            height: 120px;
+        
+            position: absolute;
+            bottom: 2px;
+            left: 600px;
+            z-index: 1;
+        
+            background: url(../images/monstruo.png) no-repeat;
+        }
+        .monstruo2{
+            width: 125px;
+            height: 90px;
+        
+            background: url(../images/monstruo2.png) no-repeat;
+        }
+        
+        
+    
+        .Murcielago{
+            width: 92px;
+            height: 26px;
+        
+            position: absolute;
+            z-index: 0;
+        
+            background: url(../images/nube.png) no-repeat;
+            background-size: 92px 26px;
+        }
+    
+        .perder{
+            display: none;
+           position: absolute;
+           width: 100%;
+            text-align: center;
+            color: red;
+            font-size: 30px;
+            font-weight: 700;
+            margin: 5%;
+            padding: 0%;
+        }
+    
+        
+    
+    /*CREDITOS*/
+    
+    .encabezado9{
+        width: 100%;
+        height: 100vh;
+        min-height: 600px;
+        max-height: 800px;
+        position: relative;
+        display: grid;
+        grid-template-rows: 100px 1fr;
+        color: #80d6cd;
+        padding-bottom: 30px;
+    }
+    
+    .encabezado9__title{
+        font-size: 4rem;
+        color: #80d6cd;
+    }
+    
+    .encabezado9::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, #0000008c, #0000008c 100%), url(../images/creditosheader.jpg);
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+        z-index: -1;
+    }
+    
+    .cont4{
+        display: inline-block;
+        font-size: 1.2rem;
+        background-color: #68bdb4;
+        justify-self: center;
+        color: #000;
+        text-decoration: none;
+        padding: 13px 30px;
+        border-radius: 33px;
+    }
+    
+    
+    .parrafo1{
+        line-height: 1.7;
+        font-size: 2em;
+        margin-bottom: 5px;
+    }
+    
+    .parrafo2{
+        line-height: 1.7;
+        font-size: 2em;
+        padding-bottom: 5%;
+    }
+    
+    
+    
+    
+    
+    /*Encabezado creditos*/
+    .encabezado11{
+        font-family: 'Agenda-Fantasy-Demo.otf';
+        width: 100%;
+        height: 100vh;
+        min-height: 600px;
+        max-height: 800px;
+        position: relative;
+        display: grid;
+        grid-template-rows: 100px 1fr;
+        color: #ffffff;
+    }
+    .encabezado11::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/headercreditos.jpg);
+        background-size: cover;
+        clip-path: ellipse(100% 60% at 50% 30%);
+        z-index: -1;
+    }
+    
+    .encabezado11__title{
+        font-family: "Midnight Flame Gothic";
+        font-size: 13rem;
+        color: red;
+    }
+    
+    .menu__titulo{
+        font-size: 1.5em;
+        font-weight: 100;
+        opacity: 60%;
+        color: red;
+    }
+
+
+/* ADAPTACION A DISPOSITIVOS MOVILES*/
+
+@media(max-width: 800px){
+    .menu__menu{
+        display: block;
+    }
+    .menu__link--menu{
+        position: fixed;
+        background-color: red;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+
+    .menu__link--show{
+        --show: block;
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .menu__close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .encabezado__title{
+        font-size: 2em;
+    }
+
+    .encabezado__paragraph{
+        font-size: 1.3em;
+    }
+
+    .diseño__main{
+        gap: 2em;
+    }
+
+    .diseño__icons:last-of-type{
+        grid-column: 1/-1;
+    }
+
+    .galeria__contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 3em;
+    }
+    .galeria__picture{
+        grid-row: 1/2;
+        justify-self: center;
+    }
+}
+
+.contacto__contenedor{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: "Midnight Flame Gothic";
+}
+
+
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ * {
+    margin: 0;
+    box-sizing: border-box;
+ }
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+-webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+-webkit-appearance: textfield; /* 1 */
+outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
